@@ -19,3 +19,5 @@ Add some more additional logging to log the request time for the Fixer API and a
 Add more validation checks in the function to validate the request to make sure the currency abbreviations are correct before sending off to the Fixer API. This will reduce calling the Fixer API.
 
 Add healthcheck endpoint. This could also ping/call the Fixer API to verify the downstream API is up and running.
+
+Remove the nulls being returned from the API. I believe I have the correct code in the startup, but need to investigate why it still returns nulls.
